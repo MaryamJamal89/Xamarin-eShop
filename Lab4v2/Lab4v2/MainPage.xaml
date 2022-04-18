@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lab4v2.MainPage"
+             Title="Xamarin Lab 4" >
+    <StackLayout Background="#f5faee" x:Name="sl">
+        <SearchBar 
+            Background="#604482"
+            x:Name="searchword" 
+            Placeholder="Type Pruduct Name" 
+            FontSize="16"
+            TextColor="White"
+            TextChanged="searchProducts"
+            SearchButtonPressed="searchProducts" />
+        <Grid HeightRequest="80">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2.8*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Picker
+            Grid.Column="0"
+            x:Name="myPicker"
+            Title="Categories" 
+            Margin="30, 0, 10, 0"
+            FontSize="16"
+            TextColor="Black"
+            TitleColor="#a9a1b8"
+            SelectedIndexChanged="pickerControlEvent" >
+            </Picker>
+            <ImageButton
+                Grid.Column="1"
+                Source="whiteShoppingCartIcon.jpg"               
+                Margin="0, 0, 20, 0"
+                Padding="16"
+                Background="#776570"
+                Clicked="toCartEvent" />
+        </Grid>
+        <ListView 
+            x:Name="LvProducts" 
+            IsPullToRefreshEnabled="True" 
+            Refreshing="loadAllData" 
+            RowHeight="100" 
+            ItemSelected="itemSelectedEvent" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.ContextActions>
+                            <MenuItem Text="Add to Cart" Clicked="addToCartEvent" CommandParameter="{Binding .}"/>
+                            <MenuItem Text="Delete" Clicked="deleteEvent" CommandParameter="{Binding .}"/>
+                            <MenuItem Text="Like" Clicked="likeEvent" CommandParameter="{Binding .}"/>
+                        </ViewCell.ContextActions>
+                        <StackLayout Orientation="Horizontal">
+                            <Image x:Name="prodImg"
+                                   Source="{Binding Image}"
+                                   HorizontalOptions="StartAndExpand" 
+                                   WidthRequest="100" 
+                                   HeightRequest="100"
+                                   Margin="10" />
+                            <ActivityIndicator IsRunning="{Binding Source={x:Reference prodImg},Path=IsLoading}"
+                                   Color="Black"
+                                   HorizontalOptions="StartAndExpand" 
+                                   WidthRequest="100" 
+                                   HeightRequest="100"
+                                   Margin="10" />
+                            <StackLayout>
+                                <Label 
+                                    Padding="0, 20, 20, 0"
+                                    Text="{Binding Name}"
+                                    TextColor="Black"
+                                    HorizontalTextAlignment="Center"
+                                    VerticalTextAlignment="Center" />
+                                <Label 
+                                    Padding="0, 0, 20, 0"
+                                    Text="{Binding Price,StringFormat='{0:C}'}"
+                                    TextColor="gray"
+                                    HorizontalTextAlignment="Center"
+                                    VerticalTextAlignment="Center" />
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <!--<Button
+            Text="My Cart"
+            Background="#776570"
+            Clicked="toCartEvent" />-->
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lab4v2.ProductDetails"
+             Title="Product Details" >
+    <ContentPage.Content>
+        <StackLayout x:Name="productDetails" Background="#f5faee" Padding="50">
+            <Image x:Name="myImg" Source="{Binding Image}" WidthRequest="200" HeightRequest="200" HorizontalOptions="Center" VerticalOptions="Center" />
+            <ActivityIndicator IsRunning="{Binding Source={x:Reference myImg},Path=IsLoading}" Color="Black" HorizontalOptions="Center" VerticalOptions="Center" />
+            <Label FontSize="Title" Text="{Binding Name}" TextColor="SaddleBrown"/>
+            <Label FontSize="Subtitle" Text="{Binding Description}" TextColor="RosyBrown"/>
+            <Label FontSize="Medium" Text="{Binding Category}" TextColor="#776570"/>
+            <Label FontSize="Medium" Text="{Binding Price,StringFormat='{0:C}'}" TextColor="#776570"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

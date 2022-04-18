@@ -1,0 +1,17 @@
+D:\Workspaces\XamarinProjects\Lab4v2\Lab4v2\Lab4v2\bin\Debug\netstandard2.0\Lab4v2.deps.json
+D:\Workspaces\XamarinProjects\Lab4v2\Lab4v2\Lab4v2\bin\Debug\netstandard2.0\Lab4v2.dll
+D:\Workspaces\XamarinProjects\Lab4v2\Lab4v2\Lab4v2\bin\Debug\netstandard2.0\Lab4v2.pdb
+D:\Workspaces\XamarinProjects\Lab4v2\Lab4v2\Lab4v2\obj\Debug\netstandard2.0\Lab4v2.csproj.AssemblyReference.cache
+D:\Workspaces\XamarinProjects\Lab4v2\Lab4v2\Lab4v2\obj\Debug\netstandard2.0\Lab4v2.GeneratedMSBuildEditorConfig.editorconfig
+D:\Workspaces\XamarinProjects\Lab4v2\Lab4v2\Lab4v2\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Workspaces\XamarinProjects\Lab4v2\Lab4v2\Lab4v2\obj\Debug\netstandard2.0\CartPage.xaml.g.cs
+D:\Workspaces\XamarinProjects\Lab4v2\Lab4v2\Lab4v2\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\Workspaces\XamarinProjects\Lab4v2\Lab4v2\Lab4v2\obj\Debug\netstandard2.0\ProductDetails.xaml.g.cs
+D:\Workspaces\XamarinProjects\Lab4v2\Lab4v2\Lab4v2\obj\Debug\netstandard2.0\Lab4v2.AssemblyInfoInputs.cache
+D:\Workspaces\XamarinProjects\Lab4v2\Lab4v2\Lab4v2\obj\Debug\netstandard2.0\Lab4v2.AssemblyInfo.cs
+D:\Workspaces\XamarinProjects\Lab4v2\Lab4v2\Lab4v2\obj\Debug\netstandard2.0\Lab4v2.csproj.CoreCompileInputs.cache
+D:\Workspaces\XamarinProjects\Lab4v2\Lab4v2\Lab4v2\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Workspaces\XamarinProjects\Lab4v2\Lab4v2\Lab4v2\obj\Debug\netstandard2.0\Lab4v2.dll
+D:\Workspaces\XamarinProjects\Lab4v2\Lab4v2\Lab4v2\obj\Debug\netstandard2.0\refint\Lab4v2.dll
+D:\Workspaces\XamarinProjects\Lab4v2\Lab4v2\Lab4v2\obj\Debug\netstandard2.0\Lab4v2.pdb
+D:\Workspaces\XamarinProjects\Lab4v2\Lab4v2\Lab4v2\obj\Debug\netstandard2.0\ref\Lab4v2.dll
